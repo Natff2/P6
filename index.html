@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6-gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --blau: #127369;
+            --vert: #10403B;
+            --gris: #4C5958;
+            --blanc-bg: #FFFFFF;
+            --negre: #000000;
+            --autor: 'Alegreya Sans', sans-serif;
+            --titol_descripcio: 'Roboto', sans-serif;
+        }
+        img{
+            width: 100%;
+        }
+        h1{
+            font-family: var(--autor);
+            color: var(--vert);
+            font-size: 0.8em;
+            letter-spacing: 0.2em;
+            font-variant: small-caps;
+            padding: 1.5em o;
+        }
+        h2,p{
+            padding: 1em 0 0 0;
+            font-family: var(--titol_descripcio);
+        }
+        h2{
+            color: var(--blau);
+            font-size: 1em;
+            font-weight: 700;
+        }
+        p{
+            color: var(--gris);
+            font-size: 1em;
+            font-size: 400;
+        }
+        .gallery{
+            padding: 2em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .card{
+            transition: flex-grow 1s;
+            border-radius: 0.2em;
+            background-color:beige;
+            flex-basis: 23%;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:nth-child(1){
+            flex-grow: 1;
+        }
+        .card:nth-child(6){
+            flex-grow: 1;
+        }
+        .card_img{
+            width: 100%;
+            height: 240px;
+        }
+        .card_img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card:hover{
+            flex-grow: 1;
+            box-shadow: 0.1em 0.1em 0.5em var(--negre)
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/01.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>vincent van gogh</h1>
+                    <h2>La noche estrellada</h2>
+                    <p>Representación artística de lo que van Gogh observaba desde la ventana de su habitación, con una obra que muestra el empleo de trazos azules y amarillos para dar vida, de forma abstracta, al pueblo que descansa a las sombras del cielo lleno de estrellas.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/02.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>giovanni strazza</h1>
+                    <h2>Virgen velada</h2>
+                    <p>Es un busto de mármol de Carrara que fue tallado magníficamente por el artista, representa a la Virgen María como si estuviera envuelta en un velo de tela, en una clara muestra de las extraordinarias habilidades del escultor para el manejo del material.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/03.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>jeff koons</h1>
+                    <h2>Balloon Dog</h2>
+                    <p>Esta es una de las esculturas desarrolladas por el empresario y artista estadounidense Jeff Koons, catalogadas bajo el arte conceptual y pop art. Se trata de una serie escultórica hecha entre 1994 y 2000 a partir de acero inoxidable con pulido de espejo.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/04.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>keith haring</h1>
+                    <h2>We Are the Youth</h2>
+                    <p>Keith Haring fue uno de los artistas más consagrados dentro del arte contemporáneo, con obras que son ampliamente valoradas en la cultura popular. Colaboración con la organización juvenil CityKids Foundation, demostrando así su apoyo a la causa de la institución.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/05.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>banksy</h1>
+                    <h2>Niña con globo</h2>
+                    <p>Se puede ver a una niña sosteniendo un globo en forma de corazón, una imagen empleada en diversas coyunturas históricas como el apoyo a los refugiados sirios o en eventos electorales.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/06.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>andy warhol</h1>
+                    <h2>Díptico de Marilyn Monroe</h2>
+                    <p>Esta serigrafía del reconocido artista estadounidense fue creada en 1962, en memoria de la célebre actriz Marilyn Monroe, y actualmente es viva representación del arte pop. En ella se muestran múltiples elementos características de este estilo como el colorido de la pieza.</p>
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
